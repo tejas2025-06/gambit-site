@@ -788,6 +788,7 @@ body.tt-magic-cursor #magic-cursor {
 
 /* tt-Headings title */
 .tt-heading-title {
+	font-family: 'inter',sans-serif;
 	margin: 0;
 	font-size: calc(24px + 1vw);
 	font-weight: bold;
@@ -802,9 +803,11 @@ body.tt-magic-cursor #magic-cursor {
 	font-weight: bold;
 	font-weight: normal;
 	color: #FFF;
+	font-family:'inter',sans-serif ;
 }
 .tt-heading-title + .tt-heading-subtitle {
 	margin: 20px 0 0 0;
+	font-family: 'inter',sans-serif;
 }
 
 /* tt-Headings paragraph */
@@ -814,6 +817,7 @@ body.tt-magic-cursor #magic-cursor {
 .tt-heading-title + p,
 .tt-heading-subtitle + p {
 	margin-top: 50px;
+	font-family: 'inter',sans-serif;
 }
 .tt-heading > p:last-child {
 	margin-bottom: 0;
@@ -829,6 +833,7 @@ body.tt-magic-cursor #magic-cursor {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #FFF;
 	-webkit-text-fill-color: transparent;
+	font-family: 'inter',sans-serif;
 }
 
 /* If "text-gray" is used */
@@ -2456,28 +2461,20 @@ body:not(.tt-boxed) .page-header-inner,
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 30px;
-  color: #eae2e2;
+  color: #d6d0d0;
   margin-top: 1rem;
   letter-spacing:  -1px;;
 }
 
 .captionb{
-	font-family: 'Inter', sans-serif;
+font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 60px;
-  color: #eae2e2;
+  color: white;
   margin-top: 1rem;
   letter-spacing:  -1px;;
 }
 
-.captions{
-	font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 60px;
-  color: #eae2e2;
-  margin-top: 1rem;
-  letter-spacing:  -1px;;
-}
 /* --- Responsive: Tablet and Mobile (≤ 1024px) --- */
 @media screen and (max-width: 1024px) {
   .headline-wrapper .line {
@@ -4236,13 +4233,14 @@ video.pgi-video {
 
 /* Portfolio grid item title */
 .pgi-title {
+	font-family: 'inter',sans-serif;
 	margin: 0;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	font-size: calc(19px + 1.5vw);
 	font-weight: bold;
-	font-weight: 600;
+	font-weight: 1000;
 	color: #FFF;
 	line-height: 1.5;
 }
@@ -7417,7 +7415,7 @@ body:not(.is-mobile) .tt-content-carousel.cc-hide-pagination .tt-cc-pagination {
 .tt-testimonials-slider .tt-ts-text {
 	font-size: calc(19px + 0.6vw);
 	line-height: 1.6;
-	font-style: italic;
+	font-family: 'inter',sans-serif;
 }
 .tt-testimonials-slider .tt-ts-subtext {
 	margin-top: 30px;
@@ -7906,6 +7904,8 @@ body:not(.tt-magic-cursor) .social-buttons > ul > li a:hover {
 	padding-top: 0;
 }
 .tt-ac-head-title {
+	font-family:'inter',sans-serif;
+	font-weight: 800;
 	margin: 0;
 	font-size: 32px;
 	line-height: 1.2;
@@ -7976,6 +7976,7 @@ body:not(.tt-magic-cursor) .social-buttons > ul > li a:hover {
 .tt-accordion-content {
 	padding-bottom: 40px;
 	color: #e0e0e0;
+	font-family: 'inter',sans-serif;
 }
 .tt-accordion-content:not(.is-open) {
 	display: none;
@@ -8380,6 +8381,7 @@ label .required {
 /* form group */
 .tt-form-group {
 	margin-bottom: 30px;
+	font-family: 'inter',sans-serif;
 }
 
 /* checkbox/radio */
