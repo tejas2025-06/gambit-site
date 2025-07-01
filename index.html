@@ -13,8 +13,7 @@
     <link rel="icon" type="image/png" href="assets/img/logo/Logo1.png">
 
     
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -108,7 +107,7 @@
                                             </li>
                                             <li class="tt-ol-submenu-wrap">
                                                 <div class="tt-ol-submenu-trigger">
-                                                    <a href="/aboutus.html">About Us</a>
+                                                    <a href="/aboutus">About Us</a>
                                                 </div>
                                             </li>
                                             <li><a href="/contact">Contact</a></li>
@@ -130,22 +129,55 @@
                     <div class="page-header-inner tt-wrap">
                         
                         <!-- Hero Background Image -->
-                        <div class="ph-image">
-                            <div class="ph-image-inner">
-                                <img src="assets/img/logo/g.png" alt="Hero Background" style="width: 100%; height: auto;" />
-                            </div>
-                        </div>
+            
 
                         
                         <!-- Hero Content -->
-                        <div class="hero-text">
+                         <div class="hero-text">
                             <div class="headline-wrapper">
-                                <h1 class="line">your</h1>
-                                <h1 class="line italic">creative</h1>
-                                <h1 class="line">wingman.</h1>
+                                <h1 class="line" data-text="your"></h1>
+                                <h1 class="line italic" data-text="creative"></h1>
+                                <h1 class="line" data-text="wingman."></h1>
                             </div>
-                            <p class="caption">Art-led stories that even the algorithm loves to double-tap.</p>
+                            <p class="caption hidden">Art-led stories that even the algorithm loves to double-tap.</p>
                         </div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const lines = document.querySelectorAll(".line");
+  const caption = document.querySelector(".caption");
+
+  let baseLetterDelay = 0.08; // seconds per letter
+  let lineGap = 0.5;          // seconds between lines
+  let totalDelay = 0;
+
+  lines.forEach((line, lineIndex) => {
+    const text = line.dataset.text;
+    line.innerHTML = '';
+
+    const lineStartDelay = lineIndex * (text.length * baseLetterDelay + lineGap);
+
+    text.split('').forEach((char, charIndex) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      const delay = lineStartDelay + charIndex * baseLetterDelay;
+      totalDelay = Math.max(totalDelay, delay);
+      span.style.animationDelay = `${delay}s`;
+      span.classList.add("letter-animate");
+      line.appendChild(span);
+    });
+  });
+
+  // Show caption after all letters animate
+  setTimeout(() => {
+    caption.classList.remove("hidden");
+    caption.classList.add("show");
+  }, (totalDelay + baseLetterDelay + 0.3) * 1000); // small buffer
+});
+</script>
+
+
 
                         
                         <!-- Scroll Down Button -->
@@ -174,7 +206,7 @@
                 </div>
                 
                 <!-- PAGE CONTENT -->
-                <div id="page-content">
+                <div id="page-content" >
                     
                     <!-- PORTFOLIO SECTION -->
                     <div class="tt-section no-padding-bottom">
@@ -182,10 +214,10 @@
                             
                             <!-- Section Heading -->
                             <div class="tt-heading tt-heading-lg tt-heading-center margin-bottom-10-p anim-fadeinup">
-                                <h3 class="caption text-gray">Latest Projects</h3>
+                                <h3 class= "captionh ">Latest Projects</h3>
                                 <h2 class="captionb">Works</h2>
-                                <div class="tt-btn tt-btn-link margin-top-20">
-                                    <a href="/portfolio.html" data-hover="See All Works">See All Works</a>
+                                <div class="captionh tt-btn tt-btn-link margin-top-20">
+                                    <a href="/portfolio" data-hover="See All Works">See All Works</a>
                                 </div>
                             </div>
                             
@@ -198,7 +230,7 @@
                                         <div class="tt-grid-item isotope-item people">
                                             <div class="ttgr-item-inner">
                                                 <div class="portfolio-grid-item">
-                                                    <a href="single-project-1.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+                                                    <a href="/PIPL" class="pgi-image-wrap" data-cursor="View<br>Project">
                                                         <div class="pgi-image-holder cover-opacity-2">
                                                             <div class="pgi-image-inner anim-zoomin">
                                                                 <figure class="pgi-image ttgr-height">
@@ -223,7 +255,7 @@
                                         <div class="tt-grid-item isotope-item creative">
                                             <div class="ttgr-item-inner">
                                                 <div class="portfolio-grid-item anim-parallax">
-                                                    <a href="single-project-2.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+                                                    <a href="/PSIMPIN" class="pgi-image-wrap" data-cursor="View<br>Project">
                                                         <div class="pgi-image-holder cover-opacity-2">
                                                             <div class="pgi-image-inner anim-zoomin">
                                                                 <figure class="pgi-image ttgr-height">
@@ -234,7 +266,7 @@
                                                     </a>
                                                     <div class="pgi-caption">
                                                         <div class="pgi-caption-inner">
-                                                            <h2 class="pgi-title">simpin</h2>
+                                                            <h2 class="pgi-title">SIMPIN CAFE</h2>
                                                             <div class="pgi-categories-wrap">
                                                                 <div class="pgi-category">Creative</div>
                                                             </div>
@@ -248,7 +280,7 @@
                                         <div class="tt-grid-item isotope-item creative">
                                             <div class="ttgr-item-inner">
                                                 <div class="portfolio-grid-item anim-parallax">
-                                                    <a href="single-project-3.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+                                                    <a href="/PCHRISSCROSS" class="pgi-image-wrap" data-cursor="View<br>Project">
                                                         <div class="pgi-image-holder cover-opacity-2">
                                                             <div class="pgi-image-inner anim-zoomin">
                                                                 <figure class="pgi-image ttgr-height">
@@ -273,7 +305,7 @@
                                         <div class="tt-grid-item isotope-item nature">
                                             <div class="ttgr-item-inner">
                                                 <div class="portfolio-grid-item">
-                                                    <a href="single-project-4.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+                                                    <a href="/PFILLI.html" class="pgi-image-wrap" data-cursor="View<br>Project">
                                                         <div class="pgi-image-holder cover-opacity-2">
                                                             <div class="pgi-image-inner anim-zoomin">
                                                                 <figure class="pgi-image ttgr-height">
@@ -599,7 +631,7 @@
                                 <input type="hidden" name="form_subject" value="Message from yourwebsiteaddress.com">
                                 
                                 <div class="tt-row">
-                                    <div class="tt-col-md-6">
+                                    <div class="tt-col-md-12">
                                         <div class="tt-form-group">
                                             <label>Name <span class="required">*</span></label>
                                             <input class="tt-form-control" type="text" id="name" name="name" placeholder="Your Name" required>
@@ -615,7 +647,6 @@
                                             <input class="tt-form-control" type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
                                         </div>
                                     </div>
-                                    <div class="tt-col-md-6"></div>
                                 </div>
                                 
                                 <div class="tt-form-group">
@@ -630,7 +661,7 @@
                                 
                                 <small class="tt-form-text"><em>Fields marked with an asterisk (*) are required!</em></small>
                                 
-                                <div class="tt-btn tt-btn-light-outline margin-top-40">
+                                <div class="caption tt-btn tt-btn-light-outline margin-top-40">
                                     <button type="submit" data-hover="Send Message">Send Message</button>
                                 </div>
                             </form>

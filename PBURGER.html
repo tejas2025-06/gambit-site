@@ -10,7 +10,7 @@
 	<head>
 
 		<!-- Title -->
-		<title>Filli-Gambit</title>
+		<title>BurgerMan-Gambit</title>
 		<link rel="icon" type="image/png" href="assets/img/logo/Logo1.png">
 
 
@@ -92,12 +92,19 @@
 			****************************************** -->
 			<div id="scroll-container"> 
 				
-				<!-- HEADER SECTION -->
-            <header id="tt-header" class="tt-header-fixed">
-                <div class="tt-header-inner">
-                    
-                    <!-- Logo Column -->
-                     <div class="tt-header-col">
+				<!-- ===================
+				///// Begin header /////
+				========================
+				* Use class "tt-header-fixed" to set header to fixed position.
+				-->
+				<header id="tt-header" class="tt-header-fixed">
+					<div class="tt-header-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
+
+						<div class="tt-header-col">
+
+							<!-- Begin logo 
+							================ -->
+							 <div class="tt-header-col">
                         <div class="tt-logo" style="display: flex; align-items:center; gap: 12px;">
                             <a href="index.html" class="tt-logo-link">
                                 <img src="assets/img/logo/Logo1.png" class="tt-logo-icon" alt="Logo">
@@ -105,8 +112,12 @@
                             </a>
                         </div>
                     </div>
-                    
-                    <!-- Navigation Column -->
+							<!-- End logo -->
+
+						</div> <!-- /.tt-header-col -->
+
+						<div class="tt-header-col">
+							<!-- Navigation Column -->
                     <div class="tt-header-col">
                         <!-- Menu Toggle Button -->
                         <div id="tt-ol-menu-toggle-btn-wrap">
@@ -172,14 +183,14 @@
 					* Use class "ph-stroke" to enable caption title stroke style.
 					* Use class "ph-inline" to enable content inline position (for a single project page only! No effect with class "ph-center"!).
 					-->
-					<div id="page-header" class="ph-full ph-inline ph-bg-image ph-image-shadow ph-image-cover-5 ph-content-parallax">
+					<div id="page-header" class="ph-full ph-bg-image ph-image-shadow ph-image-cover-5 ph-content-parallax">
 						<div class="page-header-inner tt-wrap">
 
 							<!-- Begin page header image 
 							============================= -->
 							<div class="ph-image">
 								<div class="ph-image-inner">
-									<img src="assets/img/compressed/filli.jpg" alt="Image">
+									<img src="assets/img/compressed/burger (1).png" alt="Image">
 								</div>
 							</div>
 							<!-- End page header image -->
@@ -189,9 +200,9 @@
 							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
 							-->
 							<div class="ph-caption">
+								
 
-
-								<h2 class="ph-caption-title ph-appear">Filli<br class="hide-from-lg"> cafe</h2> <!-- You can use <br class="hide-from-lg"> to break a text line if needed -->
+								<h2 class="ph-caption-title ph-appear">Burgerman</h2> <!-- You can use <br class="hide-from-lg"> to break a text line if needed -->
 								<!-- <h4 class="ph-caption-subtitle ph-appear">Subtitle</h4> -->
 							</div> 
 							<!-- End page header caption -->
@@ -199,21 +210,20 @@
 							<!-- Begin project info list
 							============================= 
 							* You can use the project info list as a standalone element outside of the page header if you want.
-							* Class "ph-appear" is for page header only!
 							-->
-							<div class="project-info-list">
+							<div class="project-info-list anim-fadeinup margin-top-60">
 								<ul>
 									<li>
 										<div class="pi-list-heading">Client</div>
-										<div class="pi-list-cont">Filli</div>
+										<div class="pi-list-cont">burgerman</div>
 									</li>
 									<li>
 										<div class="pi-list-heading">Year</div>
-										<div class="pi-list-cont">2021</div>
+										<div class="pi-list-cont">2025</div>
 									</li>
 									<li>
 										<div class="pi-list-heading">Role</div>
-										<div class="pi-list-cont">Photography</div> <!-- Describe in a few words -->
+										<div class="pi-list-cont">Branding</div> <!-- Describe in a few words -->
 									</li>
 								</ul>
 							</div>
@@ -248,6 +258,8 @@
 						</div>
 						<!-- End made with love -->
 
+						<!-- Begin page header share (share buttons are for design purposes only!) 
+						============================= -->
 						
 						
 					</div>
@@ -266,11 +278,38 @@
 						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 						-->
 						<div class="tt-section padding-top-xlg-180 padding-left-sm-3-p padding-right-sm-3-p">
-							<div class="tt-section-inner tt-wrap max-width-1000">
+							<div class="tt-section-inner tt-wrap">
 
-								<div class="anim-fadeinup font-alter text-xxlg text-center">
-									<p>Mystery forest rejoices earnest is by. Picture removal attempt way clothes yet demesne tedious. Replying an marianne do it an entrance advanced. Two dare say play when hold.</p>
-								</div>
+								<div class="tt-row">
+									<div class="tt-col-lg-4 padding-right-md-5-p">
+
+										<!-- Begin tt-Heading 
+										====================== 
+										* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
+										* Use class "tt-heading-stroke" to enable stroke style.
+										* Use class "tt-heading-center" to align tt-Heading to center.
+										* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+										-->
+										<div class="tt-heading tt-heading-xsm margin-bottom-60 anim-fadeinup">
+											<h2 class="tt-heading-title">About</h2>
+											<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
+										</div>
+										<!-- End tt-Heading -->
+
+									</div> <!-- /.tt-col -->
+
+									<div class="tt-col-lg-8">
+
+										<div class="anim-fadeinup text-gray">
+											<p>Answer misery adieus add wooded how nay men before though. Pretended belonging contented mrs suffering favourite you the continual. Mrs civil nay least means tried drift. Natural end law whether but and towards certain. Furnished unfeeling his sometimes see day promotion. Quitting informed concerns can men now informed.</p>
+
+											<!-- <div class="tt-btn tt-btn-link no-margin">
+												<a href="dummy-page.html" data-hover="Explore More">Explore More</a>
+											</div> -->
+										</div>
+
+									</div> <!-- /.tt-col -->
+								</div> <!-- /.tt-row -->
 
 							</div> <!-- /.tt-section-inner -->
 						</div>
@@ -283,71 +322,159 @@
 						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 						-->
 						<div class="tt-section">
+							<div class="tt-section-inner">
+
+								<!-- Begin tt-image
+								====================
+								* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
+								* Use class "anim-image-parallax" on <img> tag to enable parallax effect.
+								* Use class "margin-bottom-*" to enable bottom margins. For example "margin-bottom-100". More info about helper classes can be found in the file "helper.css".
+								-->
+								<div class="tt-image tti-fixed-height">
+									<figure>
+										<img class="anim-image-parallax tt-lazy" src="assets/img/compressed/burger1.jpg" data-src="assets/img/compressed/burger1" alt="image">
+										<figcaption>
+											Image Caption
+										</figcaption>
+									</figure>
+								</div> 
+								<!-- End tt-image -->
+
+							</div> <!-- /.tt-section-inner -->
+						</div>
+						<!-- End tt-section -->
+
+
+						<!-- =======================
+						///// Begin tt-section /////
+						============================ 
+						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+						-->
+						<div class="tt-section padding-left-sm-3-p padding-right-sm-3-p">
 							<div class="tt-section-inner tt-wrap">
 
-								<!-- Begin tt-image
-								====================
-								* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
-								* Use class "anim-image-parallax" on <img> tag to enable parallax effect.
-								* Use class "margin-bottom-*" to enable bottom margins. For example "margin-bottom-100". More info about helper classes can be found in the file "helper.css".
-								-->
-								<div class="tt-image margin-bottom-100">
-									<figure>
-										<img class="anim-image-parallax tt-lazy" src="assets/img/compressed/filli2.jpg" alt="image">
-										<figcaption>
-											Image Caption
-										</figcaption>
-									</figure>
-								</div> 
-								<!-- End tt-image -->
+									<div class="tt-row">
+										<div class="tt-col-lg-8">
 
-								<!-- Begin tt-image
-								====================
-								* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
-								* Use class "anim-image-parallax" on <img> tag to enable parallax effect.
-								* Use class "margin-bottom-*" to enable bottom margins. For example "margin-bottom-100". More info about helper classes can be found in the file "helper.css".
-								-->
-								<div class="tt-image margin-bottom-100">
-									<figure>
-										<img class="anim-image-parallax tt-lazy" src="assets/img/compressed/filli3.jpg"  alt="image">
-										<figcaption>
-											Image Caption
-										</figcaption>
-									</figure>
-								</div> 
-								<!-- End tt-image -->
+											<!-- Begin tt-Heading 
+											====================== 
+											* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
+											* Use class "tt-heading-stroke" to enable stroke style.
+											* Use class "tt-heading-center" to align tt-Heading to center.
+											* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+											-->
+											<div class="tt-heading tt-heading-xsm anim-fadeinup">
+												<h2 class="tt-heading-title">The Vision</h2>
+												<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
+											</div>
+											<!-- End tt-Heading -->
 
-								<!-- Begin tt-image
-								====================
-								* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
-								* Use class "anim-image-parallax" on <img> tag to enable parallax effect.
-								* Use class "margin-bottom-*" to enable bottom margins. For example "margin-bottom-100". More info about helper classes can be found in the file "helper.css".
-								-->
-								<div class="tt-image margin-bottom-100">
-									<figure>
-										<img class="anim-image-parallax tt-lazy" src="assets/img/compressed/filli4.jpg" alt="image">
-										<figcaption>
-											Image Caption
-										</figcaption>
-									</figure>
-								</div> 
-								<!-- End tt-image -->
+											<div class="anim-fadeinup text-gray">
+												<p>Was justice improve age article between. No projection as up preference reasonably delightful celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters forming far village elderly compact. Her rest west each spot his and you knew. Estate gay wooded depart six far her.</p>
+											</div>
 
-								<!-- Begin tt-image
-								====================
-								* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
-								* Use class "anim-image-parallax" on <img> tag to enable parallax effect.
-								* Use class "margin-bottom-*" to enable bottom margins. For example "margin-bottom-100". More info about helper classes can be found in the file "helper.css".
-								-->
-								<div class="tt-image margin-bottom-100">
-									<figure>
-										<img class="anim-image-parallax tt-lazy" src="assets/img/compressed/filli5.jpg" alt="image">
-										<figcaption>
-											Image Caption
-										</figcaption>
-									</figure>
-								</div> 
-								<!-- End tt-image -->
+										</div> <!-- /.tt-col -->
+
+										<div class="tt-col-lg-4">
+										</div> <!-- /.tt-col -->
+									</div> <!-- /.tt-row -->
+
+							</div> <!-- /.tt-section-inner -->
+						</div>
+						<!-- End tt-section -->
+
+
+						<!-- =======================
+						///// Begin tt-section /////
+						============================ 
+						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+						-->
+						<div class="tt-section no-padding-bottom">
+							<div class="tt-section-inner tt-wrap">
+
+								<!-- Begin tt-Gallery (works combined with tt-Ggrid!)
+								======================
+								* Use class "ttga-hover" to enable gallery item hover effect (behavior depends on "ttgr-gap-*" classes below).
+								--> 
+								<div class="tt-gallery">
+
+									<!-- Begin tt-Grid
+									=================== 
+									* Use class "ttgr-layout-2", "ttgr-layout-3", "ttgr-layout-4" to set grid layout (columns). No class = one column.
+									* Use class "ttgr-layout-1-2", "ttgr-layout-2-1", "ttgr-layout-2-3", "ttgr-layout-3-2", "ttgr-layout-3-4" or "ttgr-layout-4-3" to set grid mixed layout (columns).
+									* Use class "ttgr-layout-creative-1" or "ttgr-layout-creative-2" to set grid creative mixed layout (no effect with classes "ttgr-portrait", "ttgr-portrait-half", "ttgr-not-cropped" and "ttgr-shifted").
+									* Use class "ttgr-portrait" or "ttgr-portrait-half" to enable portrait mode (no effect with classes "ttgr-layout-creative-1", "ttgr-layout-creative-2" and "ttgr-not-cropped").
+									* Use class "ttgr-gap-1", "ttgr-gap-2", "ttgr-gap-3", "ttgr-gap-4", "ttgr-gap-5" or "ttgr-gap-6" to add space between items.
+									* Use class "ttgr-not-cropped" to enable not cropped mode (effect only with classes "ttgr-layout-2", "ttgr-layout-3" and "ttgr-layout-4").
+									* Use class "ttgr-shifted" to enable shifted layout (effect only with classes "ttgr-layout-2", "ttgr-layout-3" and "ttgr-layout-4").
+									-->
+									<div class="tt-grid ttgr-not-cropped ttgr-shifted ttgr-gap-5">
+
+										<!-- Begin tt-Grid items wrap 
+										============================== -->
+										<div class="tt-grid-items-wrap isotope-items-wrap lightgallery">
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item">
+												<div class="ttgr-item-inner">
+													<!-- Begin tt-Gallery item -->
+													<a href="assets/img/brand/img16.png" class="tt-gallery-item lg-trigger" data-cursor="View" data-html="assets/img/brand/img16.png">
+														<div class="tt-gallery-item-inner">
+															<!-- Vertical Video Wrapper with Styles -->
+															<figure class="tt-gallery-video-wrap" style="width: 100%; aspect-ratio: 9/16; overflow: hidden; display: flex; justify-content: auto; align-items: auto;">
+																<video 
+																class="tt-gallery-video" 
+																autoplay 
+																muted 
+																playsinline 
+																loop 
+																preload="metadata" 
+																poster="assets/img/brand/img16.png"
+																style="height: 100%; width: auto; object-fit: cover;">
+																<source src="assets/img/compressed/Video-404.mp4" type="video/mp4">
+																Your browser does not support the video tag.
+															</video>
+														</figure>
+														<!-- /.tt-gallery-video-wrap -->
+														</div> <!-- /.tt-gallery-item-inner -->
+													</a>
+													<!-- End tt-Gallery item -->
+													</div> <!-- /.ttgr-item-inner -->
+												</div>
+
+
+
+											<!-- Begin tt-Grid item
+											======================== -->
+											<div class="tt-grid-item isotope-item">
+												<div class="ttgr-item-inner">
+
+													<!-- Begin tt-Gallery item 
+													=========================== -->
+													<a href="assets/img/compressed/burger6.jpg" class="tt-gallery-item lg-trigger" data-cursor="View" data-sub-html="Yes, you can use image captions. :)">
+														<div class="tt-gallery-item-inner">
+															<div class="tt-gallery-image-wrap">
+																<figure class="tt-gallery-image ttgr-height">
+																	<img class="anim-image-parallax" src="assets/img/compressed/burger6.jpg" alt="image">
+																</figure> <!-- /.tt-gallery-image -->
+															</div> <!-- /.tt-gallery-image-wrap -->
+														</div> <!-- /.tt-gallery-item-inner -->
+													</a>
+													<!-- End tt-Gallery item -->
+
+												</div> <!-- /.ttgr-item-inner -->
+											</div>
+											<!-- End tt-Grid item -->
+
+										</div>
+										<!-- End tt-Grid items wrap  -->
+
+									</div>
+									<!-- End tt-Grid -->
+
+								</div>
+								<!-- End tt-Gallery -->
 
 							</div> <!-- /.tt-section-inner -->
 						</div>
@@ -368,16 +495,16 @@
 								* Use class "tt-pn-scroll" to enable hover title scroll. Note: If "tt-pn-hover-title" text is wider than "tt-pn-link" then it scrolls by default. The longer the text, the faster it scrolls.
 								-->
 								<div class="tt-page-nav tt-pn-scroll">
-									<a href="single-project-5.html" class="tt-pn-link anim-fadeinup">
+									<a href="PSAHIBS" class="tt-pn-link anim-fadeinup">
 										<div class="tt-pn-title">Next Project</div>
-										<div class="tt-pn-hover-title">Burgerman</div>
+										<div class="tt-pn-hover-title">Sahibs</div>
 									</a> <!-- /.tt-pn-link -->
 
 									<div class="tt-pn-subtitle anim-fadeinup">Explore More</div>
 
 									<!-- Use if destination page contains page header image -->
 									<div class="tt-pn-image">
-										<img src="assets/img/brand/img16.png" alt="image">
+										<img src="assets/img/brand/img8.png" alt="image">
 									</div>
 								</div>
 								<!-- End page nav -->
@@ -391,49 +518,38 @@
 					<!-- End page content -->
 
 
-					<!-- ======================
-					///// Begin tt-footer /////
-					=========================== -->
-					<footer id="tt-footer">
-						<div class="tt-footer-inner">
-
-							<!-- Begin footer column 
-							========================= -->
-							<div class="footer-col tt-align-center-left">
-								<div class="footer-col-inner">
-
-									<!-- You can use whatever button or link here -->
-									<div class="tt-btn tt-btn-link">
-										<a href="#" class="scroll-to-top" data-hover="Back to top">Back to top</a>
-									</div>
-
-								</div> <!-- /.footer-col-inner -->
-							</div>
-							<!-- Begin footer column -->
-
-							<!-- Begin footer column 
-							========================= -->
-							<div class="footer-col tt-align-center order-m-last">
-								<div class="footer-col-inner">
-
-									<div class="tt-copyright">
-										© Copyright - <a  target="_blank" rel="noopener" class="tt-link">Gambitmedia</a>
-									</div>
-
-								</div> <!-- /.footer-col-inner -->
-							</div>
-							<!-- Begin footer column -->
-
-							<!-- Begin footer column 
-							========================= -->
-							<div class="footer-col tt-align-center-right">
-								<div class="footer-col-inner">
-
-									<div class="footer-social">
-										<div class="footer-social-text"><span>Follow</span><i class="fas fa-share-alt"></i></div>
-										<div class="social-buttons">
-											<ul>
-												<li>
+					<!-- FOOTER -->
+                <footer id="tt-footer">
+                    <div class="tt-footer-inner">
+                        
+                        <!-- Footer Column 1 -->
+                        <div class="footer-col tt-align-center-left">
+                            <div class="footer-col-inner">
+                                <div class="tt-btn tt-btn-link">
+                                    <a href="#" class="scroll-to-top" data-hover="Back to top">Back to top</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Footer Column 2 -->
+                        <div class="footer-col tt-align-center order-m-last">
+                            <div class="footer-col-inner">
+                                <div class="tt-copyright">
+                                    © Copyright - <a  target="_blank" rel="noopener" class="tt-link">Gambitmedia</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Footer Column 3 -->
+                        <div class="footer-col tt-align-center-right">
+                            <div class="footer-col-inner">
+                                <div class="footer-social">
+                                    <div class="footer-social-text">
+                                        <span>Follow</span><i class="fas fa-share-alt"></i>
+                                    </div>
+                                    <div class="social-buttons">
+                                        <ul>
+                                            <li>
 													<a href="https://in.linkedin.com/company/gambitmedia-in" class="magnetic-item" target="_blank" rel="noopener">
 														<i class="fab fa-linkedin"></i>
 													</a>
@@ -443,17 +559,13 @@
 														<i class="fab fa-instagram"></i>
 													</a>
 												</li>
-											</ul>
-										</div> <!-- /.social-buttons -->
-									</div> <!-- /.footer-social -->
-
-								</div> <!-- /.footer-col-inner -->
-							</div>
-							<!-- Begin footer column -->
-
-						</div> <!-- /.tt-section-inner -->
-					</footer>
-					<!-- End tt-footer -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
 
 
 				</div>

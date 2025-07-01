@@ -1,79 +1,3 @@
-/* --------------------------------------------------------------------
-* Template Master Stylesheet
-* 
-* Template:		Tank - Creative Port
-olio Showcase HTML Website Template
-* Author:		Themetorium
-* URL:			https://themetorium.net/
-*
-* Body Font (global): 'Poppins', sans-serif;
-* Secondary Font: 'Noto Serif JP', serif;
--------------------------------------------------------------------- */
-
-
-/* Table of Content
-====================
-* General
-* Fonts
-* Page transitions
-* Page boxed layout
-* Body inner
-* Content wrap
-* Page content
-* Custom scrollbar style
-* Smooth Scrollbar
-* Magic cursor
-* tt-Section
-* Headings
-* tt-Headings (custom headings)
-* Header
-* Header tools
-* Classic menu
-* Overlay menu
-* Page header
-* tt-Grid
-* Portfolio grid
-* Portfolio List
-* Portfolio interactive
-* Portfolio slider (full screen)
-* Portfolio carousel
-* Portfolio hover carousel
-* tt-Gallery
-* Lightgallery (lightbox plugin)
-* Page nav
-* Logo wall
-* tt-Image
-* Content carousel
-* Testimonials slider
-* Buttons
-* Social buttons
-* tt-Accordion
-* Table
-* tt-Tabs
-* Magnetic wrap
-* Blockquote
-* Figure
-* Forms
-* Contact info
-* Background video
-* Background noise
-* tt-Embed
-* Scrolling text
-* Pagination (tt-pagination)
-* Sidebar (classic)
-* Sliding sidebar
-* Sidebar widgets
-* Blog list
-* Blog interactive
-* Blog single post
-* Footer
-*/ 
-
-
-
-/* ------------------------------------------------------------- *
- * General
-/* ------------------------------------------------------------- */
 
 * { box-sizing: border-box; }
 
@@ -206,16 +130,26 @@ hr {
 	text-align: left;
 }
 
+@media screen and (max-width: 768px) {
+  #page-content {
+    padding-top: 120px; /* Adjust value as needed */
+  }
+
+  .tt-heading.tt-heading-lg {
+    margin-top: 120px; /* Add more if needed */
+  }
+}
+
 
 /* Mobile styles */
 @media (max-width: 768px) {
   .ph-caption {
-    text-align: left !important; /* force left alignment */
-    padding-left: 6px; /* optional: spacing from edge */
+    text-align: left !important;
+    padding-left: 6px;
   }
 
   .ph-caption-title {
-    font-size: 28px !important; /* reduce name size */
+    font-size: 28px !important;
     line-height: 1.1;
   }
 
@@ -225,6 +159,66 @@ hr {
 
   .ph-category {
     font-size: 12px !important;
+  }
+  
+  /* Header adjustments */
+  #tt-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  /* Hero section adjustments */
+  #page-header {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+  
+  .page-header-inner {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .hero-text {
+    margin-top: 0;
+    padding-top: 40px;
+  }
+  
+  .headline-wrapper h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+  
+  /* Portfolio section adjustments */
+  #page-content {
+    margin-top: 0;
+  }
+  
+  .tt-section.no-padding-bottom {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  
+  .tt-heading {
+    margin-top: 0;
+    padding: 0 20px;
+  }
+  
+  /* Adjust the scroll down button position */
+  .scroll-down-circle {
+    bottom: 40px;
+  }
+  
+  /* Made with love adjustment */
+  .made-with-love {
+    bottom: 20px;
   }
 }
 
@@ -236,7 +230,7 @@ hr {
 /* Body font
 ============= */
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family:'Helvetica',' Arial', 'sans-serif';
 }
 
 
@@ -475,6 +469,7 @@ body:not(.is-mobile).tt-smooth-scroll #scroll-container {
 	pointer-events: none;
 	z-index: 99999;
 	opacity: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 body.tt-magic-cursor #magic-cursor {
 	display: block;
@@ -779,6 +774,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .tt-heading {
 	margin-bottom: 40px;
+	font-family: 'Helvetica','Arial',' sans-serif';
 }
 @media (max-width: 991px) {
 	.tt-heading {
@@ -788,12 +784,13 @@ body.tt-magic-cursor #magic-cursor {
 
 /* tt-Headings title */
 .tt-heading-title {
-	font-family: 'inter',sans-serif;
+	font-family: 'Helvetica','Arial',' sans-serif'; 
 	margin: 0;
 	font-size: calc(24px + 1vw);
 	font-weight: bold;
 	font-weight: 500;
 	color: #FFF;
+	letter-spacing: -1.2px;
 }
 
 /* tt-Headings subtitle */
@@ -803,11 +800,14 @@ body.tt-magic-cursor #magic-cursor {
 	font-weight: bold;
 	font-weight: normal;
 	color: #FFF;
-	font-family:'inter',sans-serif ;
+	font-family:'Helvetica','Arial',sans-serif; 
+	letter-spacing: -1.2px;
+	
 }
 .tt-heading-title + .tt-heading-subtitle {
 	margin: 20px 0 0 0;
-	font-family: 'inter',sans-serif;
+	font-family: 'Helvetica','Arial',sans-serif; 
+	letter-spacing: -1.2px;
 }
 
 /* tt-Headings paragraph */
@@ -817,7 +817,9 @@ body.tt-magic-cursor #magic-cursor {
 .tt-heading-title + p,
 .tt-heading-subtitle + p {
 	margin-top: 50px;
-	font-family: 'inter',sans-serif;
+	font-family: 'Helvetica','Arial',' sans-serif'; 
+	letter-spacing: -1.2px;
+
 }
 .tt-heading > p:last-child {
 	margin-bottom: 0;
@@ -833,7 +835,7 @@ body.tt-magic-cursor #magic-cursor {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #FFF;
 	-webkit-text-fill-color: transparent;
-	font-family: 'inter',sans-serif;
+	font-family:Arial, Helvetica, sans-serif
 }
 
 /* If "text-gray" is used */
@@ -2458,7 +2460,7 @@ body:not(.tt-boxed) .page-header-inner,
 }
 
 .caption {
-  font-family: 'Inter', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 30px;
   color: #d6d0d0;
@@ -2467,7 +2469,7 @@ body:not(.tt-boxed) .page-header-inner,
 }
 
 .captionb{
-font-family: 'Inter', sans-serif;
+font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 60px;
   color: white;
@@ -2478,7 +2480,7 @@ font-family: 'Inter', sans-serif;
 /* --- Responsive: Tablet and Mobile (≤ 1024px) --- */
 @media screen and (max-width: 1024px) {
   .headline-wrapper .line {
-    font-size: 50px;
+    font-size: 60px;
     letter-spacing: -1px;
   }
 
@@ -2486,6 +2488,32 @@ font-family: 'Inter', sans-serif;
     font-size: 20px;
   }
 }
+
+.line span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealLetter 0.4s ease forwards;
+}
+
+@keyframes revealLetter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hide the caption initially */
+.caption.hidden {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Show the caption */
+.caption.show {
+  opacity: 1;
+}
+
 
 
 
@@ -2830,6 +2858,7 @@ a.ph-category:hover {
 }
 .mwl-text {
 	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .mwl-icon {
 	display: inline-block;
@@ -2844,6 +2873,16 @@ a.ph-category:hover {
 	50% { transform: scale(1); }
 	100% { transform: scale(1); }
 }
+
+.captionh{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  color: white;
+  margin-top: 1rem;
+  letter-spacing:  -1.1px;;
+}
+
 
 
 /* Page header share 
@@ -4175,6 +4214,7 @@ body.tt-boxed .tt-wrap .tt-grid.ttgr-gap-6 {
 /* Portfolio grid item */
 .portfolio-grid-item {
 	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -4186,6 +4226,7 @@ body.tt-boxed .tt-wrap .tt-grid.ttgr-gap-6 {
 	overflow: hidden;
 	z-index: 1;
 	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .pgi-image-holder {
 }
@@ -4233,7 +4274,7 @@ video.pgi-video {
 
 /* Portfolio grid item title */
 .pgi-title {
-	font-family: 'inter',sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
 	margin: 0;
 	overflow: hidden;
 	white-space: nowrap;
@@ -4243,6 +4284,7 @@ video.pgi-video {
 	font-weight: 1000;
 	color: #FFF;
 	line-height: 1.5;
+	letter-spacing: -1.2px;;
 }
 @media (max-width: 767px) {
 	.pgi-title {
@@ -4281,6 +4323,7 @@ video.pgi-video {
 	font-size: calc(13px + 0.1vw);
 	color: #FFF;
 	opacity: .5;
+	font-family: Arial, Helvetica, sans-serif;;
 }
 .pgi-category ~ .pgi-category {
 	margin-left: -4px;
@@ -7415,7 +7458,8 @@ body:not(.is-mobile) .tt-content-carousel.cc-hide-pagination .tt-cc-pagination {
 .tt-testimonials-slider .tt-ts-text {
 	font-size: calc(19px + 0.6vw);
 	line-height: 1.6;
-	font-family: 'inter',sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
+	letter-spacing: -1.2px;;
 }
 .tt-testimonials-slider .tt-ts-subtext {
 	margin-top: 30px;
@@ -7904,11 +7948,12 @@ body:not(.tt-magic-cursor) .social-buttons > ul > li a:hover {
 	padding-top: 0;
 }
 .tt-ac-head-title {
-	font-family:'inter',sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
 	font-weight: 800;
 	margin: 0;
 	font-size: 32px;
 	line-height: 1.2;
+	letter-spacing: -1.2px;
 }
 @media (max-width: 991px) {
 	.tt-ac-head-title {
@@ -7976,7 +8021,8 @@ body:not(.tt-magic-cursor) .social-buttons > ul > li a:hover {
 .tt-accordion-content {
 	padding-bottom: 40px;
 	color: #e0e0e0;
-	font-family: 'inter',sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
+	letter-spacing: -0.8px;
 }
 .tt-accordion-content:not(.is-open) {
 	display: none;
@@ -8351,6 +8397,8 @@ figcaption a:hover {
 	margin-top: 5px;
 	font-style: italic;
 	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: -1.2px;
 }
 
 label {
@@ -8381,7 +8429,7 @@ label .required {
 /* form group */
 .tt-form-group {
 	margin-bottom: 30px;
-	font-family: 'inter',sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* checkbox/radio */
